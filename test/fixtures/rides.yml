@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pickup_location: MyString
+  drop_location: MyString
+  pickup_lat: 1.5
+  pickup_lng: 1.5
+  drop_lat: 1.5
+  drop_lng: 1.5
+  estimated_bill: 1.5
+  actual_bill: 1.5
+  pickup_time: 2021-03-01 13:18:16
+  discount: 1.5
+  vehicle_type: MyString
+  status: MyString
+
+two:
+  pickup_location: MyString
+  drop_location: MyString
+  pickup_lat: 1.5
+  pickup_lng: 1.5
+  drop_lat: 1.5
+  drop_lng: 1.5
+  estimated_bill: 1.5
+  actual_bill: 1.5
+  pickup_time: 2021-03-01 13:18:16
+  discount: 1.5
+  vehicle_type: MyString
+  status: MyString

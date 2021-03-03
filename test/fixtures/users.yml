@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  address: MyText
+  email: MyString
+  wallet: MyText
+  driver_star_rating: 1.5
+  customer_star_rating: 1.5
+  status: MyString
+  is_driver: false
+  vehicle_type: MyString
+  vehicle_number: MyString
+  password_digest: MyString
+
+two:
+  name: MyString
+  address: MyText
+  email: MyString
+  wallet: MyText
+  driver_star_rating: 1.5
+  customer_star_rating: 1.5
+  status: MyString
+  is_driver: false
+  vehicle_type: MyString
+  vehicle_number: MyString
+  password_digest: MyString

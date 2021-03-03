@@ -1,0 +1,962 @@
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "freight_backend_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "freight_backend_development" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2021-03-01 11:11:01 -0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "freight_backend_development" does not exist
+):
+  
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2021-03-01 11:11:01 -0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "freight_backend_development" does not exist
+):
+  
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "kickrstack_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "database_name" ENCODING = 'unicode'[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "database_name" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "database_name" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "freight_backend_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "freight_backend_development" ENCODING = 'unicode'[0m
+  [1m[35m (2384.6ms)[0m  [1m[35mCREATE DATABASE "freight_backend_development" ENCODING = 'unicode'[0m
+  [1m[35m (1881.5ms)[0m  [1m[35mCREATE DATABASE "freight_backend_test" ENCODING = 'unicode'[0m
+  [1m[35m (20.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (11.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6708325673172606840)[0m
+  [1m[35m (9.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210301184459)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "address" text, "email" character varying, "wallet" text, "driver_star_rating" float, "customer_star_rating" float, "status" character varying, "is_driver" boolean, "vehicle_type" character varying, "vehicle_number" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210301184459"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (7.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-03-01 20:01:00.794866"], ["updated_at", "2021-03-01 20:01:00.794866"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6708325673172606840)[0m
+  [1m[35m (9.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (46.6ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (28.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (38.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "rudy"], ["address", "Suite 732 99550 Dare Ridges, West Yahairaport, CA 74567-0771"], ["email", "paris.lang@herzog.co"], ["wallet", "cash"], ["driver_star_rating", 2.229091035340398], ["customer_star_rating", 2.640170899535784], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 20:21:21.119087"], ["updated_at", "2021-03-01 20:21:21.119087"]]
+  [1m[36mTRANSACTION (13.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "melisa"], ["address", "Apt. 647 545 Jerde Well, Spencerfort, IA 12342-0161"], ["email", "mariette@walter.info"], ["wallet", "cash"], ["driver_star_rating", 2.2141786465276625], ["customer_star_rating", 2.589577249069506], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 20:21:21.186940"], ["updated_at", "2021-03-01 20:21:21.186940"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "carie"], ["address", "Apt. 236 40212 Gayle Canyon, Lake Sandy, NC 99314"], ["email", "josette.corkery@jakubowski.biz"], ["wallet", "cash"], ["driver_star_rating", 4.7311733543256365], ["customer_star_rating", 3.9679352472920257], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 20:21:21.203283"], ["updated_at", "2021-03-01 20:21:21.203283"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "easter"], ["address", "72183 Remona Spur, Sanfordton, PA 81912-5645"], ["email", "angelo@hauck.info"], ["wallet", "cash"], ["driver_star_rating", 4.140779249260703], ["customer_star_rating", 0.8557567943549599], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 20:21:21.219343"], ["updated_at", "2021-03-01 20:21:21.219343"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "stephen_johns"], ["address", "Suite 999 44507 Kreiger Mills, West Don, AZ 52273-2010"], ["email", "burton@luettgen.info"], ["wallet", "cash"], ["driver_star_rating", 4.745505501406512], ["customer_star_rating", 1.13484962247559], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 20:21:21.234802"], ["updated_at", "2021-03-01 20:21:21.234802"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "juana"], ["address", "923 Lillian Street, Cronachester, SD 06763-4835"], ["email", "laverne@ortiz.org"], ["wallet", "cash"], ["driver_star_rating", 1.4323097755575631], ["customer_star_rating", 2.43940672268255], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 20:21:21.246088"], ["updated_at", "2021-03-01 20:21:21.246088"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "clemente.rutherford"], ["address", "Suite 416 28645 Keri Passage, Lake Abbey, NC 28992-5470"], ["email", "mack.jakubowski@simonis-boyle.io"], ["wallet", "cash"], ["driver_star_rating", 4.84435352561032], ["customer_star_rating", 2.14941244679821], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 20:21:21.253844"], ["updated_at", "2021-03-01 20:21:21.253844"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "jared"], ["address", "495 Frami Knolls, North Mervin, IN 49162-6314"], ["email", "alfredia_rempel@bosco.net"], ["wallet", "cash"], ["driver_star_rating", 4.983427903720589], ["customer_star_rating", 1.131119747646014], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 20:21:21.261363"], ["updated_at", "2021-03-01 20:21:21.261363"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "roni.buckridge"], ["address", "Apt. 437 335 Schiller Rapid, North Miriamshire, WY 92541-7283"], ["email", "kirk.harber@ratke-macejkovic.io"], ["wallet", "cash"], ["driver_star_rating", 1.5366899221484571], ["customer_star_rating", 4.864271740183975], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 20:21:21.268509"], ["updated_at", "2021-03-01 20:21:21.268509"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "matthew_marquardt"], ["address", "29080 VonRueden Park, North Alfonsobury, WA 09065-9629"], ["email", "samual_gutmann@stamm.com"], ["wallet", "cash"], ["driver_star_rating", 0.42793224626236637], ["customer_star_rating", 4.7509522021852915], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 20:21:21.275345"], ["updated_at", "2021-03-01 20:21:21.275345"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (13.7ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2021-03-01 12:44:04 -0800
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.7.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.7.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 92.0ms | Allocations: 294)
+Completed 200 OK in 257ms (Views: 143.7ms | ActiveRecord: 0.0ms | Allocations: 2704)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-03-01 12:44:05 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users" for ::1 at 2021-03-01 12:44:12 -0800
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController
+Did you mean?  decoded_token
+               encode_token
+               create
+               auth_header):
+  
+actionpack (6.1.3) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2021-03-01 12:45:00 -0800
+Processing by UsersController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 627)
+
+
+Started GET "/users" for ::1 at 2021-03-01 12:45:14 -0800
+Processing by UsersController#index as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.2ms)
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 19ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 303)
+
+
+Started GET "/users" for ::1 at 2021-03-01 12:45:37 -0800
+Processing by UsersController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 49)
+
+
+Started GET "/users" for ::1 at 2021-03-01 12:45:38 -0800
+Processing by UsersController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 28)
+
+
+Started GET "/users" for ::1 at 2021-03-01 12:45:39 -0800
+Processing by UsersController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 30)
+
+
+Started GET "/users" for ::1 at 2021-03-01 12:45:39 -0800
+Processing by UsersController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 26)
+
+
+Started GET "/users" for ::1 at 2021-03-01 12:46:01 -0800
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController
+Did you mean?  decoded_token
+               encode_token
+               create
+               auth_header):
+  
+actionpack (6.1.3) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2021-03-01 12:46:34 -0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (35.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.88ms)
+Completed 200 OK in 315ms (Views: 255.7ms | ActiveRecord: 49.2ms | Allocations: 12869)
+
+
+Started GET "/users" for ::1 at 2021-03-01 12:46:44 -0800
+Processing by UsersController#index as HTML
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 35)
+
+
+Started GET "/users" for ::1 at 2021-03-01 12:46:46 -0800
+Processing by UsersController#index as HTML
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 26)
+
+
+Started GET "/users" for ::1 at 2021-03-01 12:46:47 -0800
+Processing by UsersController#index as HTML
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 26)
+
+
+Started GET "/users" for ::1 at 2021-03-01 12:46:49 -0800
+Processing by UsersController#index as HTML
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 27)
+
+
+Started GET "/users" for ::1 at 2021-03-01 12:46:57 -0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (6.64ms)
+Completed 200 OK in 63ms (Views: 47.4ms | ActiveRecord: 4.4ms | Allocations: 9618)
+
+
+Started GET "/rides" for ::1 at 2021-03-01 12:48:31 -0800
+Processing by RidesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1774)
+
+
+  
+NameError (uninitialized constant RidesController::Ride):
+  
+app/controllers/rides_controller.rb:4:in `index'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6708325673172606840)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRides (20210301211815)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (103.2ms)[0m  [1m[35mCREATE TABLE "rides" ("id" bigserial primary key, "pickup_location" character varying, "drop_location" character varying, "pickup_lat" float, "pickup_lng" float, "drop_lat" float, "drop_lng" float, "estimated_bill" float, "actual_bill" float, "pickup_time" timestamp, "discount" float, "vehicle_type" character varying, "status" character varying, "driver_id" bigint, "customer_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_efe84989e9"
+FOREIGN KEY ("driver_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_3eb8c79c78"
+FOREIGN KEY ("customer_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE INDEX "index_rides_on_driver_id" ON "rides" ("driver_id")[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE INDEX "index_rides_on_customer_id" ON "rides" ("customer_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210301211815"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (29.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(6708325673172606840)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (20.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (32.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[36mTRANSACTION (16.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 9]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 10]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "meredith"], ["address", "895 Linnie Inlet, South Sylvester, CT 92534"], ["email", "nathan@hermiston.io"], ["wallet", "cash"], ["driver_star_rating", 0.787010134456862], ["customer_star_rating", 3.4815770232601873], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:25:35.419559"], ["updated_at", "2021-03-01 21:25:35.419559"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "shelby_glover"], ["address", "979 Reba Crest, West Houstonborough, OR 89940"], ["email", "eric@upton.io"], ["wallet", "cash"], ["driver_star_rating", 4.829952373462465], ["customer_star_rating", 4.548263180265602], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:25:35.425134"], ["updated_at", "2021-03-01 21:25:35.425134"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "jere_beer"], ["address", "520 Mueller Street, Desiraemouth, IN 34433"], ["email", "sterling_sawayn@harber.info"], ["wallet", "cash"], ["driver_star_rating", 0.4580330583929909], ["customer_star_rating", 4.646169563793759], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:25:35.429603"], ["updated_at", "2021-03-01 21:25:35.429603"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "keith"], ["address", "13962 Thompson Walk, Wardmouth, RI 13906-6277"], ["email", "cruz@gislason.biz"], ["wallet", "cash"], ["driver_star_rating", 3.655996134080857], ["customer_star_rating", 2.717911037050449], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:25:35.434261"], ["updated_at", "2021-03-01 21:25:35.434261"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "laurine.considine"], ["address", "34934 Reynaldo Throughway, Kendrafort, CT 89441"], ["email", "emilee@fahey.info"], ["wallet", "cash"], ["driver_star_rating", 4.86175667050219], ["customer_star_rating", 3.5803299131393427], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:25:35.438967"], ["updated_at", "2021-03-01 21:25:35.438967"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "lavonna"], ["address", "Apt. 957 190 Dave Ports, Port Tijuana, NH 86663-5462"], ["email", "roy@bode.io"], ["wallet", "cash"], ["driver_star_rating", 3.299851224769254], ["customer_star_rating", 0.8744766672522541], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:25:35.444132"], ["updated_at", "2021-03-01 21:25:35.444132"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "herb"], ["address", "30028 Mckinley Plains, Terinaberg, OR 73600-7326"], ["email", "sherilyn.prosacco@williamson.net"], ["wallet", "cash"], ["driver_star_rating", 4.068096747894759], ["customer_star_rating", 0.5460432672438936], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:25:35.449239"], ["updated_at", "2021-03-01 21:25:35.449239"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "odell.kulas"], ["address", "Suite 210 5001 Geri Underpass, West Meloniestad, WV 71685-7382"], ["email", "cyndy@orn.io"], ["wallet", "cash"], ["driver_star_rating", 3.4305696593422814], ["customer_star_rating", 4.963758418549242], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:25:35.454756"], ["updated_at", "2021-03-01 21:25:35.454756"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "hyo_mosciski"], ["address", "302 Nienow Summit, Angiestad, DE 60658"], ["email", "james@wilderman.org"], ["wallet", "cash"], ["driver_star_rating", 4.414394288536846], ["customer_star_rating", 0.374682407683547], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:25:35.459406"], ["updated_at", "2021-03-01 21:25:35.459406"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "danny"], ["address", "Apt. 936 4606 Lena Dam, New Tuyetview, NE 96387"], ["email", "coleman_baumbach@klein-carter.co"], ["wallet", "cash"], ["driver_star_rating", 3.661134492634214], ["customer_star_rating", 0.6004713960906827], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:25:35.464508"], ["updated_at", "2021-03-01 21:25:35.464508"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (1.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 11]]
+  [1m[36mTRANSACTION (41.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 12]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 13]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 14]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 15]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 16]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 17]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 18]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 19]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 20]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "guy"], ["address", "7883 Trantow Turnpike, East Loritafort, NE 61253"], ["email", "maria.rodriguez@jakubowski.biz"], ["wallet", "cash"], ["driver_star_rating", 2.7650180276370446], ["customer_star_rating", 0.2784326837817769], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:26:11.676439"], ["updated_at", "2021-03-01 21:26:11.676439"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "ula"], ["address", "198 Jacquelyn Courts, Cordellfurt, MT 37623-1401"], ["email", "stanley@cummings-ledner.info"], ["wallet", "cash"], ["driver_star_rating", 4.857479824233723], ["customer_star_rating", 1.0771363905024778], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:26:11.683310"], ["updated_at", "2021-03-01 21:26:11.683310"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "pinkie.schmitt"], ["address", "3855 Freddy Court, Dickitown, MD 91645-3918"], ["email", "chere@rolfson.org"], ["wallet", "cash"], ["driver_star_rating", 0.5013809918483564], ["customer_star_rating", 4.690997366094684], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:26:11.687807"], ["updated_at", "2021-03-01 21:26:11.687807"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "francesco"], ["address", "Suite 463 19810 Stacy Landing, New Elbert, MO 61174"], ["email", "mariela_cormier@miller-kihn.name"], ["wallet", "cash"], ["driver_star_rating", 4.813631881055007], ["customer_star_rating", 2.5513079756093986], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:26:11.692277"], ["updated_at", "2021-03-01 21:26:11.692277"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "korey"], ["address", "Apt. 649 12357 Kesha Viaduct, East Vaughn, KS 72844"], ["email", "lavera@cruickshank.info"], ["wallet", "cash"], ["driver_star_rating", 4.711524200020506], ["customer_star_rating", 2.6059891024383166], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:26:11.696575"], ["updated_at", "2021-03-01 21:26:11.696575"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "hugo.smith"], ["address", "Apt. 925 3119 Howe Plain, Berrychester, RI 59987-8546"], ["email", "johnathon_walsh@ryan.com"], ["wallet", "cash"], ["driver_star_rating", 4.993837217896186], ["customer_star_rating", 3.8344866211483355], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:26:11.701102"], ["updated_at", "2021-03-01 21:26:11.701102"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "sandi"], ["address", "Suite 542 27580 Verdie Mount, Louisachester, FL 23613-5032"], ["email", "freeman@feeney.biz"], ["wallet", "cash"], ["driver_star_rating", 3.6962482576629165], ["customer_star_rating", 3.6670595804839383], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:26:11.705674"], ["updated_at", "2021-03-01 21:26:11.705674"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "leo.schaden"], ["address", "Suite 306 4148 O'Keefe Terrace, Colefort, PA 88919"], ["email", "lucrecia.konopelski@little.io"], ["wallet", "cash"], ["driver_star_rating", 0.8496952157282223], ["customer_star_rating", 0.24532126205628502], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:26:11.710317"], ["updated_at", "2021-03-01 21:26:11.710317"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "adrian"], ["address", "Suite 897 950 Kozey Parkways, Howardstad, WA 95077"], ["email", "christiana@casper-lang.co"], ["wallet", "cash"], ["driver_star_rating", 0.325811870033651], ["customer_star_rating", 0.5602031710082578], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:26:11.715013"], ["updated_at", "2021-03-01 21:26:11.715013"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "flora.parisian"], ["address", "859 O'Kon Row, Bernadineshire, AR 97021-4947"], ["email", "sherice@rohan-batz.net"], ["wallet", "cash"], ["driver_star_rating", 4.67472037094263], ["customer_star_rating", 0.731782213157639], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["created_at", "2021-03-01 21:26:11.719755"], ["updated_at", "2021-03-01 21:26:11.719755"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mRide Load (1.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/rides" for ::1 at 2021-03-01 13:26:41 -0800
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RidesController#index as HTML
+  [1m[36mRide Load (1.9ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/controllers/rides_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.23ms)
+Completed 200 OK in 151ms (Views: 85.4ms | ActiveRecord: 1.9ms | Allocations: 4844)
+
+
+Started GET "/" for ::1 at 2021-03-02 00:02:33 -0800
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2021-03-02 00:02:34 -0800
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2021-03-02 00:04:26 -0800
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.17ms)
+Completed 200 OK in 360ms (Views: 232.8ms | ActiveRecord: 10.7ms | Allocations: 14762)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-03-02 00:04:27 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/rides" for ::1 at 2021-03-02 14:48:53 -0800
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2021-03-02 14:48:53 -0800
+  
+ActiveRecord::ConnectionNotEstablished (could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.1) lib/puma/configuration.rb:247:in `call'
+puma (5.2.1) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.1) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.1) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.1) lib/puma/server.rb:431:in `process_client'
+puma (5.2.1) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2021-03-02 14:49:41 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.17ms)
+Completed 200 OK in 149ms (Views: 99.0ms | ActiveRecord: 4.6ms | Allocations: 14744)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-03-02 14:49:42 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/rides" for ::1 at 2021-03-02 14:49:46 -0800
+Processing by RidesController#index as HTML
+  [1m[36mRide Load (0.8ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/controllers/rides_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.07ms)
+Completed 200 OK in 38ms (Views: 3.4ms | ActiveRecord: 0.8ms | Allocations: 1815)
+
+
+Started GET "/rides" for ::1 at 2021-03-02 14:51:09 -0800
+Processing by RidesController#index as HTML
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/controllers/rides_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 772)
+
+
+Started GET "/rides" for ::1 at 2021-03-02 14:51:10 -0800
+Processing by RidesController#index as HTML
+  [1m[36mRide Load (0.4ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/controllers/rides_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.05ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 772)
+
+
+Started GET "/rides" for ::1 at 2021-03-02 14:51:11 -0800
+Processing by RidesController#index as HTML
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/controllers/rides_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.04ms)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 772)
+
+
+Started GET "/rides" for ::1 at 2021-03-02 14:51:22 -0800
+Processing by RidesController#index as HTML
+  [1m[36mRide Load (0.3ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/controllers/rides_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.09ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 749)
+
+
+Started GET "/rides" for ::1 at 2021-03-02 14:58:28 -0800
+Processing by RidesController#index as HTML
+  [1m[36mRide Load (0.7ms)[0m  [1m[34mSELECT "rides".* FROM "rides"[0m
+  ↳ app/controllers/rides_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.06ms)
+Completed 200 OK in 35ms (Views: 35.2ms | ActiveRecord: 6.0ms | Allocations: 2899)
+
+
+Started GET "/users" for ::1 at 2021-03-02 22:05:10 -0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.09ms)
+Completed 200 OK in 64ms (Views: 62.3ms | ActiveRecord: 11.4ms | Allocations: 4904)
+
+
+Started GET "/" for 127.0.0.1 at 2021-03-02 22:14:15 -0800
+Started GET "/users" for 127.0.0.1 at 2021-03-02 22:14:15 -0800
+Started GET "/users" for ::1 at 2021-03-02 22:14:15 -0800
+Processing by UsersController#index as HTML
+Processing by UsersController#index as HTML
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.7.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.07ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.72ms)
+Completed 200 OK in 157ms (Views: 156.3ms | ActiveRecord: 11.0ms | Allocations: 13194)
+
+
+Completed 200 OK in 155ms (Views: 154.7ms | ActiveRecord: 65.5ms | Allocations: 12663)
+
+
+  Rendered /var/lib/gems/2.7.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 51.0ms | Allocations: 9343)
+Completed 200 OK in 110ms (Views: 53.4ms | ActiveRecord: 0.0ms | Allocations: 10975)
+
+
+Started GET "/favicon.ico" for 127.0.0.1 at 2021-03-02 22:14:15 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2021-03-03 09:35:52 -0800
+  [1m[35m (13.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/2.7.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/2.7.0/gems/railties-6.1.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 35.7ms | Allocations: 294)
+Completed 200 OK in 69ms (Views: 40.8ms | ActiveRecord: 0.0ms | Allocations: 2280)
+
+
+Started GET "/users" for ::1 at 2021-03-03 09:35:58 -0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (15.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.28ms)
+Completed 200 OK in 79ms (Views: 22.8ms | ActiveRecord: 48.2ms | Allocations: 12943)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (9.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6708325673172606840)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRides (20210301211815)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (22.5ms)[0m  [1m[35mDROP TABLE "rides"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210301211815"]]
+  [1m[36mTRANSACTION (34.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6708325673172606840)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6708325673172606840)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210301184459)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Destroy (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20210301184459"]]
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6708325673172606840)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6708325673172606840)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210301184459)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (64.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "address" text, "email" character varying, "wallet" text, "driver_star_rating" float, "customer_star_rating" float, "status" character varying, "is_driver" boolean, "vehicle_type" character varying, "vehicle_number" character varying, "password_digest" character varying, "latitude" character varying, "longitude" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210301184459"]]
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRides (20210301211815)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (19.7ms)[0m  [1m[35mCREATE TABLE "rides" ("id" bigserial primary key, "pickup_location" character varying, "drop_location" character varying, "pickup_lat" float, "pickup_lng" float, "drop_lat" float, "drop_lng" float, "estimated_bill" float, "actual_bill" float, "pickup_time" timestamp, "discount" float, "vehicle_type" character varying, "status" character varying, "driver_id" bigint, "customer_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_efe84989e9"
+FOREIGN KEY ("driver_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_3eb8c79c78"
+FOREIGN KEY ("customer_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE INDEX "index_rides_on_driver_id" ON "rides" ("driver_id")[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE INDEX "index_rides_on_customer_id" ON "rides" ("customer_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210301211815"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6708325673172606840)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (38.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "aron"], ["address", "25593 Hubert Plains, New Russel, IA 47237"], ["email", "cheyenne_parker@barrows-beatty.org"], ["wallet", "cash"], ["driver_star_rating", 4.702301532955114], ["customer_star_rating", 1.7368474089430108], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "43.24200555593805"], ["longitude", "-68.86437869438639"], ["created_at", "2021-03-03 18:03:10.843232"], ["updated_at", "2021-03-03 18:03:10.843232"]]
+  [1m[36mTRANSACTION (8.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "caron"], ["address", "Suite 790 79509 Hyatt Views, Jacquelinefurt, ME 26383-9126"], ["email", "coreen.ferry@dicki.com"], ["wallet", "cash"], ["driver_star_rating", 4.79284208536484], ["customer_star_rating", 1.2158890470374555], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "-50.99309119289477"], ["longitude", "-140.2449739451542"], ["created_at", "2021-03-03 18:03:10.899750"], ["updated_at", "2021-03-03 18:03:10.899750"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "porfirio"], ["address", "Suite 919 46428 Timothy Walk, South Lavernachester, NJ 26790"], ["email", "homer@mccullough-armstrong.name"], ["wallet", "cash"], ["driver_star_rating", 3.6342351593855096], ["customer_star_rating", 4.678219845701733], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "62.29004618029643"], ["longitude", "86.36628767708584"], ["created_at", "2021-03-03 18:03:10.909793"], ["updated_at", "2021-03-03 18:03:10.909793"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "willis.legros"], ["address", "Suite 882 5309 Jona Ways, Alexisburgh, DE 44218"], ["email", "elisha_volkman@nikolaus.co"], ["wallet", "cash"], ["driver_star_rating", 4.091851266629834], ["customer_star_rating", 1.5736488527232724], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "4.023075075753496"], ["longitude", "-25.375290339782197"], ["created_at", "2021-03-03 18:03:10.919486"], ["updated_at", "2021-03-03 18:03:10.919486"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "matt"], ["address", "Apt. 370 22336 Ortiz Plaza, New Shennaville, VT 70097"], ["email", "tommie_ritchie@von.com"], ["wallet", "cash"], ["driver_star_rating", 2.404972154401988], ["customer_star_rating", 2.685001484077616], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "-51.18977613074028"], ["longitude", "-100.98242236252452"], ["created_at", "2021-03-03 18:03:10.929056"], ["updated_at", "2021-03-03 18:03:10.929056"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "edwardo.kulas"], ["address", "7959 Homenick Rapid, Port Yolonda, PA 30072-6876"], ["email", "elvera@huel.com"], ["wallet", "cash"], ["driver_star_rating", 4.344211002149842], ["customer_star_rating", 4.669075738669061], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "-51.923602806778746"], ["longitude", "-6.702186449111281"], ["created_at", "2021-03-03 18:03:10.940400"], ["updated_at", "2021-03-03 18:03:10.940400"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "jazmin_murazik"], ["address", "Suite 642 1388 Fritsch Oval, East Nomachester, IA 14523"], ["email", "nikki@gleason.net"], ["wallet", "cash"], ["driver_star_rating", 2.011796007754294], ["customer_star_rating", 0.7382983551934269], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "36.540037345510314"], ["longitude", "3.4528893150064164"], ["created_at", "2021-03-03 18:03:10.952756"], ["updated_at", "2021-03-03 18:03:10.952756"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "casie"], ["address", "94641 Medhurst Lakes, Lake Jiton, OK 19512"], ["email", "milagros@batz.net"], ["wallet", "cash"], ["driver_star_rating", 3.7220353770015264], ["customer_star_rating", 4.966440372796376], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "67.60221564759746"], ["longitude", "-100.51865343547293"], ["created_at", "2021-03-03 18:03:10.962516"], ["updated_at", "2021-03-03 18:03:10.962516"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "jefferson"], ["address", "Apt. 944 79293 Ondricka Trail, South Ramonaside, ID 62241-1515"], ["email", "lilian@konopelski-hoeger.net"], ["wallet", "cash"], ["driver_star_rating", 4.027532518356498], ["customer_star_rating", 3.553469806821889], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "5.552688794535143"], ["longitude", "-115.25493975897325"], ["created_at", "2021-03-03 18:03:10.972725"], ["updated_at", "2021-03-03 18:03:10.972725"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "layla.nikolaus"], ["address", "Suite 304 88726 Stark Vista, Wenonaborough, UT 04797-9466"], ["email", "dylan@ferry.org"], ["wallet", "cash"], ["driver_star_rating", 1.278910779915607], ["customer_star_rating", 1.618400484620373], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "-53.046237913112584"], ["longitude", "65.15544771602097"], ["created_at", "2021-03-03 18:03:10.982639"], ["updated_at", "2021-03-03 18:03:10.982639"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users" for ::1 at 2021-03-03 10:03:50 -0800
+  [1m[35m (11.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.45ms)
+Completed 200 OK in 30ms (Views: 16.5ms | ActiveRecord: 4.2ms | Allocations: 15714)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/users" for ::1 at 2021-03-03 10:05:15 -0800
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.61ms)
+Completed 200 OK in 36ms (Views: 21.7ms | ActiveRecord: 5.5ms | Allocations: 15714)
+
+
+Started GET "/users" for ::1 at 2021-03-03 10:06:07 -0800
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.57ms)
+Completed 200 OK in 74ms (Views: 61.0ms | ActiveRecord: 4.9ms | Allocations: 15962)
+
+
