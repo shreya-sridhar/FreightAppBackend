@@ -24,7 +24,7 @@ default: &default
 development:
   <<: *default
   database: freight_backend_development
-  user: username 
+  user: username
   password: 12345678
   host: localhost
   port: 5432
@@ -62,7 +62,7 @@ development:
 test:
   <<: *default
   database: freight_backend_test
-  user: username 
+  user: username
   password: 12345678
   host: localhost
   port: 5432
@@ -89,9 +89,6 @@ test:
 #
 production:
   <<: *default
-  database: freight_backend_production
-  username: freight_backend
+  database: freightbackendproduction
+  username: username
   password: <%= ENV['FREIGHT_BACKEND_DATABASE_PASSWORD'] %>
-
-
-
