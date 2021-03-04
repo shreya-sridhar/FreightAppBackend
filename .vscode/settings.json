@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/c342ffe6-d637-493d-9a42-04b240eec426/resourceGroups/FrieghtAppBackend/providers/Microsoft.Web/sites/FrieghtAppBackend",
+    "appService.deploySubpath": "."
+}
