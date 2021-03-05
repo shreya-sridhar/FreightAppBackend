@@ -1622,3 +1622,249 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 31ms (Views: 21.3ms | ActiveRecord: 5.3ms | Allocations: 14144)
 
 
+Started GET "/users" for ::1 at 2021-03-05 10:14:20 -0800
+  
+ActiveRecord::ConnectionNotEstablished (FATAL:  password authentication failed for user "username"
+FATAL:  password authentication failed for user "username"
+):
+  
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:83:in `rescue in new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (6.1.3) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `public_send'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:882:in `new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:926:in `checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:905:in `try_to_checkout_new_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:866:in `acquire_connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:588:in `checkout'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:428:in `connection'
+activerecord (6.1.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1128:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:327:in `retrieve_connection'
+activerecord (6.1.3) lib/active_record/connection_handling.rb:283:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:611:in `connection'
+activerecord (6.1.3) lib/active_record/migration.rb:606:in `build_watcher'
+activerecord (6.1.3) lib/active_record/migration.rb:588:in `block in call'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2021-03-05 10:16:32 -0800
+  [1m[35m (28.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 2 pending migrations:
+
+20210301184459_create_users.rb
+20210301211815_create_rides.rb
+
+
+):
+  
+activerecord (6.1.3) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.3) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.3) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.3) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.3) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.3) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3046526807777167680)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210301184459)
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (159.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "address" text, "email" character varying, "wallet" text, "driver_star_rating" float, "customer_star_rating" float, "status" character varying, "is_driver" boolean, "vehicle_type" character varying, "vehicle_number" character varying, "password_digest" character varying, "latitude" character varying, "longitude" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210301184459"]]
+  [1m[36mTRANSACTION (15.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRides (20210301211815)
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (99.7ms)[0m  [1m[35mCREATE TABLE "rides" ("id" bigserial primary key, "pickup_location" character varying, "drop_location" character varying, "pickup_lat" float, "pickup_lng" float, "drop_lat" float, "drop_lng" float, "estimated_bill" float, "actual_bill" float, "pickup_time" timestamp, "discount" float, "vehicle_type" character varying, "status" character varying, "driver_id" bigint, "customer_id" bigint, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_efe84989e9"
+FOREIGN KEY ("driver_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_3eb8c79c78"
+FOREIGN KEY ("customer_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE INDEX "index_rides_on_driver_id" ON "rides" ("driver_id")[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE INDEX "index_rides_on_customer_id" ON "rides" ("customer_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20210301211815"]]
+  [1m[36mTRANSACTION (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (27.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(3046526807777167680)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users" for ::1 at 2021-03-05 10:17:37 -0800
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (12.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.28ms)
+Completed 200 OK in 205ms (Views: 85.6ms | ActiveRecord: 12.9ms | Allocations: 8426)
+
+
+  [1m[35m (24.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (66.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "lynn_ondricka"], ["address", "Apt. 254 85548 Azzie Plaza, West Leena, OH 86492-9124"], ["email", "kermit_kuvalis@schamberger.io"], ["wallet", "cash"], ["driver_star_rating", 0.7404290057428059], ["customer_star_rating", 1.9029918404857464], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "-56.77604445284635"], ["longitude", "-120.83328296425486"], ["created_at", "2021-03-05 18:17:54.983321"], ["updated_at", "2021-03-05 18:17:54.983321"]]
+  [1m[36mTRANSACTION (11.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "jorge"], ["address", "5730 Bethanie Drive, Port Olen, ME 53475"], ["email", "johnson@wintheiser.info"], ["wallet", "cash"], ["driver_star_rating", 2.360703696051675], ["customer_star_rating", 4.375729888698938], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "-20.209306643052614"], ["longitude", "55.45053472120648"], ["created_at", "2021-03-05 18:17:55.073952"], ["updated_at", "2021-03-05 18:17:55.073952"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "jarvis_oreilly"], ["address", "Suite 303 71663 Ellis Isle, Kreigerfurt, CO 72258"], ["email", "thaddeus.effertz@waelchi-swift.name"], ["wallet", "cash"], ["driver_star_rating", 3.7622397179139213], ["customer_star_rating", 2.0207441787203706], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "0.2747016339931463"], ["longitude", "22.181627295742288"], ["created_at", "2021-03-05 18:17:55.087887"], ["updated_at", "2021-03-05 18:17:55.087887"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "olivia_hahn"], ["address", "Apt. 848 954 Fernanda Loaf, Clemmiestad, AL 86305"], ["email", "shalanda@jacobs.io"], ["wallet", "cash"], ["driver_star_rating", 2.7980607095154038], ["customer_star_rating", 0.19251714893649796], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "-77.03007757995168"], ["longitude", "112.46423899584954"], ["created_at", "2021-03-05 18:17:55.102316"], ["updated_at", "2021-03-05 18:17:55.102316"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "diego"], ["address", "Apt. 175 12834 Schoen Ville, West Laureenshire, UT 10731"], ["email", "antonia_schroeder@langosh.io"], ["wallet", "cash"], ["driver_star_rating", 2.3348672835603907], ["customer_star_rating", 4.548117025608542], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "51.79487539814261"], ["longitude", "-113.22638869764195"], ["created_at", "2021-03-05 18:17:55.116623"], ["updated_at", "2021-03-05 18:17:55.116623"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "napoleon.willms"], ["address", "580 Jackson Prairie, Aaronstad, KS 16477-0898"], ["email", "alfredo@hoppe.com"], ["wallet", "cash"], ["driver_star_rating", 2.014803584667704], ["customer_star_rating", 0.8713331639766103], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "-26.40904939508325"], ["longitude", "141.14446899119258"], ["created_at", "2021-03-05 18:17:55.130656"], ["updated_at", "2021-03-05 18:17:55.130656"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "cortez"], ["address", "509 Samatha Bypass, East Dallas, HI 15502-2954"], ["email", "leandro@hills.name"], ["wallet", "cash"], ["driver_star_rating", 3.1704056739591717], ["customer_star_rating", 0.05139935789169214], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "82.65584160038205"], ["longitude", "48.31112217248352"], ["created_at", "2021-03-05 18:17:55.144357"], ["updated_at", "2021-03-05 18:17:55.144357"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "theodora"], ["address", "75543 Paucek Rest, West Jordanland, ND 31619-5644"], ["email", "alisa.shanahan@luettgen.net"], ["wallet", "cash"], ["driver_star_rating", 2.124898403632801], ["customer_star_rating", 4.936161143107324], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "-24.19900670837613"], ["longitude", "-123.46389207113548"], ["created_at", "2021-03-05 18:17:55.159656"], ["updated_at", "2021-03-05 18:17:55.159656"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "brynn"], ["address", "232 Imelda Mission, Johnathonport, NE 36121"], ["email", "gabriel@kshlerin-torp.co"], ["wallet", "cash"], ["driver_star_rating", 4.498781171497944], ["customer_star_rating", 4.749411965087964], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "-12.061624450645795"], ["longitude", "-111.8675131732529"], ["created_at", "2021-03-05 18:17:55.175688"], ["updated_at", "2021-03-05 18:17:55.175688"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "elisa_lesch"], ["address", "73296 Myles Bridge, West Earnest, MD 53127"], ["email", "lorilee_cartwright@botsford.io"], ["wallet", "cash"], ["driver_star_rating", 4.766114853925653], ["customer_star_rating", 4.624615070976667], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "14.39890933553157"], ["longitude", "-115.36716574797275"], ["created_at", "2021-03-05 18:17:55.193618"], ["updated_at", "2021-03-05 18:17:55.193618"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3046526807777167680)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (13.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(3046526807777167680)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (14.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (35.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  [1m[36mTRANSACTION (58.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 8]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 9]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 10]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "brad.pollich"], ["address", "Suite 116 1491 Kassulke Plains, Sadyetown, ND 26285-6662"], ["email", "vernita_mann@adams.io"], ["wallet", "cash"], ["driver_star_rating", 2.132489120675039], ["customer_star_rating", 1.0667026872471168], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "-66.59568392755314"], ["longitude", "16.97754658209925"], ["created_at", "2021-03-05 18:18:14.902625"], ["updated_at", "2021-03-05 18:18:14.902625"]]
+  [1m[36mTRANSACTION (37.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "celia_runolfsson"], ["address", "Suite 373 5307 Stanton Court, Dainemouth, RI 32892-9643"], ["email", "joey_pacocha@collier.biz"], ["wallet", "cash"], ["driver_star_rating", 0.8389108208035378], ["customer_star_rating", 0.5844444037983043], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "-85.61798591358543"], ["longitude", "56.795329529451976"], ["created_at", "2021-03-05 18:18:14.954602"], ["updated_at", "2021-03-05 18:18:14.954602"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "shawn"], ["address", "1990 Frances Via, Port Johnnie, AL 45127-6879"], ["email", "anitra@hackett.net"], ["wallet", "cash"], ["driver_star_rating", 4.079351983294081], ["customer_star_rating", 1.030044304021383], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "62.49717337331677"], ["longitude", "65.39809329224403"], ["created_at", "2021-03-05 18:18:14.970807"], ["updated_at", "2021-03-05 18:18:14.970807"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "jacqualine"], ["address", "11239 Weissnat Plains, West Clarenceberg, VA 00013-3910"], ["email", "jorge.donnelly@keebler.net"], ["wallet", "cash"], ["driver_star_rating", 2.712278991300992], ["customer_star_rating", 4.535860609285725], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "55.95714095503891"], ["longitude", "113.43274989493983"], ["created_at", "2021-03-05 18:18:14.985328"], ["updated_at", "2021-03-05 18:18:14.985328"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "dion.miller"], ["address", "Apt. 546 83372 Ileana Hill, Edmundomouth, NV 80913"], ["email", "emilio.roberts@ullrich-gleason.co"], ["wallet", "cash"], ["driver_star_rating", 1.4170117667089432], ["customer_star_rating", 3.3593969902668803], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "45.166893791698556"], ["longitude", "79.99499855381151"], ["created_at", "2021-03-05 18:18:15.000657"], ["updated_at", "2021-03-05 18:18:15.000657"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "kurt"], ["address", "Apt. 261 16383 Glendora Ferry, West Claytonland, CT 38545"], ["email", "angelo@mckenzie-ebert.name"], ["wallet", "cash"], ["driver_star_rating", 3.431751318855636], ["customer_star_rating", 1.0634394746492841], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "81.31355000510541"], ["longitude", "-28.914699383622917"], ["created_at", "2021-03-05 18:18:15.017615"], ["updated_at", "2021-03-05 18:18:15.017615"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "jude_mayert"], ["address", "Suite 532 38733 Joshua Village, Wuckertshire, CO 43051-5758"], ["email", "ronnie@schaden.name"], ["wallet", "cash"], ["driver_star_rating", 2.422833141354355], ["customer_star_rating", 4.876871499293741], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "5.2820576174026"], ["longitude", "133.04233602035868"], ["created_at", "2021-03-05 18:18:15.031411"], ["updated_at", "2021-03-05 18:18:15.031411"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "keneth_gutkowski"], ["address", "Apt. 112 89417 Aufderhar Center, New Dorotha, DE 56157-3194"], ["email", "alba_harris@hammes.io"], ["wallet", "cash"], ["driver_star_rating", 4.819252421848996], ["customer_star_rating", 1.608375288367323], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "-42.2764722536044"], ["longitude", "36.558830841498775"], ["created_at", "2021-03-05 18:18:15.046096"], ["updated_at", "2021-03-05 18:18:15.046096"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "kimberely"], ["address", "Suite 990 416 Emmerich Forks, Jodiport, CA 48809-5939"], ["email", "easter@walter.biz"], ["wallet", "cash"], ["driver_star_rating", 4.781975103002076], ["customer_star_rating", 3.094027391737924], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "2.8205013477070224"], ["longitude", "78.1960473210778"], ["created_at", "2021-03-05 18:18:15.061389"], ["updated_at", "2021-03-05 18:18:15.061389"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "address", "email", "wallet", "driver_star_rating", "customer_star_rating", "status", "is_driver", "vehicle_type", "vehicle_number", "password_digest", "latitude", "longitude", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["name", "darrick"], ["address", "Apt. 115 443 Tangela Skyway, Port Layneville, NC 02337-7654"], ["email", "socorro@hilpert.biz"], ["wallet", "cash"], ["driver_star_rating", 1.2141460580749346], ["customer_star_rating", 1.9603550421343696], ["status", "idle"], ["is_driver", false], ["vehicle_type", "truck"], ["vehicle_number", "789"], ["password_digest", "12345"], ["latitude", "-45.46368762974256"], ["longitude", "134.92590430767132"], ["created_at", "2021-03-05 18:18:15.077514"], ["updated_at", "2021-03-05 18:18:15.077514"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/users" for ::1 at 2021-03-05 10:18:20 -0800
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (4.72ms)
+Completed 200 OK in 130ms (Views: 92.0ms | ActiveRecord: 9.6ms | Allocations: 22117)
+
+

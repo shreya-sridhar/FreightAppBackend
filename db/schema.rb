@@ -36,6 +36,12 @@ ActiveRecord::Schema.define(version: 2021_03_01_211815) do
     t.index ["driver_id"], name: "index_rides_on_driver_id"
   end
 
+  create_table "tasks", force: :cascade do |t|
+    t.text "Description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "name"
     t.text "address"
