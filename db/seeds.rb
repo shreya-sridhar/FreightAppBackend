@@ -19,7 +19,7 @@ User.destroy_all
       is_driver: false,
       vehicle_type: 'truck',
       vehicle_number: '789' ,
-      password_digest: '12345',
+      password: '12345',
       latitude:Faker::Address.latitude,
       longitude:Faker::Address.longitude
     )

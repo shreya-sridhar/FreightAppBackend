@@ -9,7 +9,14 @@ class RidesController < ApplicationController
   end
 
   def create
-    @ride = Ride.create(ride_params)
+    # byebug
+    @ride = Ride.create(pickup_location: params["pickup_location"],
+    drop_location: params["drop_location"],
+    pickup_time: params["pickup_time"],
+    vehicle_type: params["vehicle_type"],
+    driver_id: params["driver"]["id"],
+    customer_id: params["customer"]["id"])
+    # byebug
     @ride.save
     render json: @ride
   end

@@ -5,5 +5,6 @@ Rails.application.routes.draw do
 
   post '/login', to: 'auth#create'
   get '/profile', to: 'users#profile'
+  get '/driver', to: 'users#finddriver'
   post '/signup', to: 'users#create'
 end
