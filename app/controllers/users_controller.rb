@@ -9,9 +9,10 @@ class UsersController < ApplicationController
       # byebug
       render json: { user: UserSerializer.new(current_user) }, status: :accepted
     end
+    
 
     def finddriver 
-      # byebug
+      byebug
       @user = current_user
       min_dist = Float::INFINITY
       @driver = nil

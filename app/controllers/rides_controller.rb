@@ -9,14 +9,14 @@ class RidesController < ApplicationController
   end
 
   def create
-    # byebug
+    bill = 100*distance_between(params["start_lat"],params["start_lng"],params["end_lat"],params["end_lng"])
     @ride = Ride.create(pickup_location: params["pickup_location"],
     drop_location: params["drop_location"],
     pickup_time: params["pickup_time"],
     vehicle_type: params["vehicle_type"],
     driver_id: params["driver"]["id"],
     customer_id: params["customer"]["id"])
-    # byebug
+    actual_bill:bill
     @ride.save
     render json: @ride
   end

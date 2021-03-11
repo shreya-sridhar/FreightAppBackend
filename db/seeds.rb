@@ -25,3 +25,24 @@ User.destroy_all
     )
   end
 
+20.times do 
+  Ride.create(
+  pickup_location:Faker::Address.full_address ,
+  drop_location:Faker::Address.full_address ,
+  actual_bill: rand(10...100),
+  pickup_time: Faker::Time.between(from: DateTime.now - 30, to: DateTime.now, format: :default),
+  vehicle_type:"truck",
+  status:"complete",
+  driver_id:User.all.sample.id,
+  customer_id:User.all.sample.id
+  )
+end
+
+100.times do 
+  Item.create(
+  description:Faker::Lorem.word,
+  ride_id:Ride.all.sample.id
+  )
+end
+
+
